@@ -13,3 +13,9 @@ closeButton.addEventListener("click", event => {
   navMobile.style.display = "none";
   navMobile.classList.remove("animated", "slideInDown");
 });
+
+window.addEventListener("resize", event => {
+  if (window.innerWidth > 900) {
+    navMobile.style.display = "none";
+  }
+});
