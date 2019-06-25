@@ -129,14 +129,75 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-.menu {
-  top: 0;
-  width: 100%;
-  border: 2px solid red;
-  margin-top: 2rem;
+header {
+  display: flex;
+  justify-content: space-between;
 }
-.main-title {
-  margin: 25px;
-  padding: 2 25rem 30rem;
+header .nav-mobile {
+  display: none;
+}
+header .nav-desktop {
+  display: none;
+}
+.action {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.action .main-cta {
+  width: 100%;
+  padding-top: 2rem;
+}
+.action .mobile-post-it {
+  padding-bottom: 1rem;
+  position: relative;
+  top: -2rem;
+}
+.action h2 {
+  justify-content: center;
+  margin: 3rem;
+  font-size: 1.5rem;
+  width: 80%;
+}
+.action p {
+  font-size: 1rem;
+  width: 95%;
+  padding-top: 0.3rem;
+  font-size: 1.1em;
+  margin-left: 1rem;
+}
+.action .join-btn-div {
+  padding-bottom: 4rem;
+  padding-top: 2rem;
+  display: flex;
+}
+.action .join-btn {
   border: 2px solid red;
+  color: white;
+  background: red;
+  width: 23%;
+  border-radius: 3rem;
+  margin-left: 4rem;
+  padding: 0.5rem 0 0.5rem 0;
+  font-size: 0.9em;
+}
+.review {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.review .company-container {
+  width: 49.5%;
+  border-right: 1px solid black;
+}
+.review .company-container .company .company-rating {
+  display: flex;
+  justify-content: center;
+}
+.review .customer-feedback-container {
+  width: 100%;
+  order: -1;
+}
+.review .award-container {
+  width: 49.5%;
 }

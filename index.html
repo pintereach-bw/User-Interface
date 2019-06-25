@@ -1,39 +1,100 @@
-<!DOCTYPE html>
-<html lang="en">
+</html>
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
   <title>Pintereach - Home</title>
 </head>
 
 <body>
-  <header>
-    <div class="menu">
-      
-      <nav >
-        <li><a href="#">Link1</a></li>
-        <li><a href="#">Link2</a></li>
-        <li><a href="#">Link3</a></li>
-        <li><a href="#">Link4</a></li>
-        <li><a href="#">Link5</a></li>
-        <div>
-            <h1 class="logo">PINTEREACH</h1>
-        </div>
+  <div class="home container">
+    <header>
+      <a href="index.html">
+        <h1>Pintreach</h1>
+      </a>
+      <i class="fas fa-bars"></i>
+      <nav class="nav-mobile">
+        <i class="fas fa-times"></i>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="#">Login</a>
       </nav>
-    </div>
-  </header>
-  
-    
-  
-  <div class="main-title">
-      <h2>PINTEREACH</h2>
-    <h1>SEE. SAVE. CREATE</h1>
-    <p>Imagine all your favorite articles in one place. Create your own board 
-      or look at other boards. Get inspired.</p>
-    <button>JOIN</button>
+      <nav class="nav-desktop">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="#">Login</a>
+      </nav>
+
+       
+    </header>
+    <section class="action">
+      <div class= "main-cta">
+          
+        <h2>SEE. SAVE. CREATE.</h2>
+        <div class="mobile-post-it">
+          <img src="images/postit.png" alt="">
+        </div>
+        
+        <p>Imagine all your favorite articles in one place. <br> Create your own board or look at other boards. 
+          Get inspired.</p>
+          <div class="join-btn-div">
+            <br>
+          <button class="join-btn">JOIN US</button>
+          </div>
+          
+          
+        </div>
+    </section>
+
+    <section class="review">
+
+      
+      <div class="company-container">
+        <div class="company">
+          <i class="fab fa-apple">App Store</i>
+          <div class="company-rating">
+            <p>5</p>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="company">
+          <i class="fab fa-google-play">Google Play</i>
+          <div class="company-rating">
+            <p>4.5</p>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half"></i>
+          </div>
+        </div>
+      </div>
+      
+     <div class="customer-feedback-container">
+          <div class="customer-feedback">
+            <p>"Simple and easy to use!"</p>
+            <i class="fab fa-twitter">@theInsectGuy</i>
+          </div>
+          <div class="customer-feedback">
+            <p>"Made my research more organized"</p>
+            <i class="fab fa-twitter">@_birdGirl</i>
+          </div>
+        </div>
+        <div class="award-container">
+          <div class="award">
+            <i class="fas fa-award">7X</i>
+            <p>Tech Award Winner</p>
+          </div>
+        </div>
+    </section>
   </div>
 </body>
 
