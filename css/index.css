@@ -387,23 +387,120 @@ header .nav-desktop a {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  height: 400px;
+  height: 300px;
   background-color: beige;
+  padding: 2rem 0 2rem;
+  font-size: 1.2rem;
+}
+@media (min-width: 900px) {
+  .review {
+    height: 200px;
+    border-radius: 15px;
+  }
 }
 .review .company-container {
-  width: 49.5%;
+  width: 49%;
   border-right: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+@media (min-width: 900px) {
+  .review .company-container {
+    width: 33%;
+    order: 0;
+  }
+}
+.review .company-container .company {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.review .company-container .company p {
+  font-weight: bold;
+}
+.review .company-container .company .company-icon {
+  display: flex;
+}
+.review .company-container .company .company-icon i {
+  margin-right: 0.2rem;
+  margin-top: 0.3rem;
+}
+.review .company-container .company .company-icon .fab.fa-apple {
+  color: #a6b1b7;
+}
+.review .company-container .company .company-icon .fab.fa-google-play {
+  color: #21aabc;
 }
 .review .company-container .company .company-rating {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+.review .company-container .company .company-rating p {
+  margin-right: 0.2rem;
+}
+.review .company-container .company .company-rating .fas.fa-star,
+.review .company-container .company .company-rating .fas.fa-star-half {
+  color: #ffb800;
 }
 .review .customer-feedback-container {
   width: 100%;
   order: -1;
+  margin-bottom: 2rem;
+}
+@media (min-width: 900px) {
+  .review .customer-feedback-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 33%;
+    order: 0;
+    margin: 0;
+  }
+}
+.review .customer-feedback-container .customer-feedback {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.review .customer-feedback-container .customer-feedback > p {
+  font-weight: bolder;
+}
+.review .customer-feedback-container .customer-feedback .twitter-icon {
+  display: flex;
+  align-items: center;
+}
+.review .customer-feedback-container .customer-feedback .twitter-icon i {
+  margin-right: 0.2rem;
+  margin-top: 0.2rem;
+  color: #1ab2e8;
 }
 .review .award-container {
-  width: 49.5%;
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.review .award-container p {
+  font-weight: bold;
+}
+@media (min-width: 900px) {
+  .review .award-container {
+    width: 33%;
+    border-left: 1px solid black;
+  }
+}
+.review .award-container .award-icon {
+  display: flex;
+  align-items: center;
+}
+.review .award-container .award-icon i {
+  margin-right: 0.2rem;
+  margin-top: 0.2rem;
+  color: #1150b5;
 }
 footer {
   text-align: center;
