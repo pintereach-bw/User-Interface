@@ -213,6 +213,11 @@ header .nav-desktop {
 header .nav-desktop a {
   font-size: 1.3rem;
 }
+.content-container {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
 .action {
   display: flex;
   flex-wrap: wrap;
@@ -554,4 +559,18 @@ header .nav-desktop a {
 }
 footer {
   text-align: center;
+  background-color: #e9e5e5;
+}
+footer .footer-nav {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 1rem 1rem 1rem;
+  padding-top: 0.9rem;
+}
+footer a {
+  text-decoration: none;
+  color: #a1a765;
+}
+footer p {
+  padding-bottom: 1rem;
 }
