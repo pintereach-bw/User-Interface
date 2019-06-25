@@ -1,3 +1,6 @@
+.border {
+  border: 2 px solid red;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -125,4 +128,145 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header .nav-mobile {
+  display: none;
+}
+header .nav-desktop {
+  display: none;
+}
+.action {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.action .main-cta {
+  width: 100%;
+  padding-top: 2rem;
+  border-bottom: 1px dashed gray;
+}
+.action .mobile-post-it {
+  padding-bottom: 1rem;
+  position: relative;
+  top: -2rem;
+}
+.action .small-post-it-img {
+  border-radius: 15px;
+}
+.action h2 {
+  justify-content: center;
+  margin: 3rem;
+  font-size: 1.5rem;
+  width: 80%;
+}
+.action p {
+  font-size: 1rem;
+  width: 95%;
+  padding-top: 0.3rem;
+  font-size: 1.1em;
+  margin-left: 1rem;
+}
+.action .join-btn-div {
+  padding-bottom: 4rem;
+  padding-top: 2rem;
+  display: flex;
+}
+.action .join-btn {
+  color: white;
+  background: red;
+  width: 23%;
+  border-radius: 3rem;
+  margin-left: 4rem;
+  padding: 0.5rem 0 0.5rem 0;
+  font-size: 0.9em;
+}
+.action-two {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  padding-top: 1.5rem;
+  border-top: 1px dashed gray;
+  margin-right: 3rem;
+}
+.action-two h2 {
+  font-size: 1.4rem;
+  justify-content: center;
+  padding-bottom: 2rem;
+  margin-left: 3.5rem;
+  width: 80%;
+}
+.action-two p {
+  display: flex;
+  padding-top: 1rem;
+  justify-content: center;
+}
+.phone-search-div {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding-top: 2rem;
+}
+.phone-search-div .phone-search {
+  border-radius: 15px;
+}
+.board-blurb {
+  margin-top: 3rem;
+}
+.news-articles-div {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding-top: 2rem;
+}
+.news-articles-div .news-articles-pic {
+  border-radius: 15px;
+  border: 1px solid silver;
+}
+.simple-blurb {
+  margin-top: 3rem;
+}
+.simple-div {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding-top: 2rem;
+}
+.simple-div .simple-pic {
+  border-radius: 15px;
+}
+.start-btn-div {
+  padding-bottom: 4rem;
+  padding-top: 2rem;
+  display: flex;
+}
+.start-btn {
+  color: white;
+  background: red;
+  width: 23%;
+  border-radius: 3rem;
+  margin-left: 4rem;
+  padding: 0.5rem 0 0.5rem 0;
+  font-size: 0.7em;
+}
+.review {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.review .company-container {
+  width: 49.5%;
+  border-right: 1px solid black;
+}
+.review .company-container .company .company-rating {
+  display: flex;
+  justify-content: center;
+}
+.review .customer-feedback-container {
+  width: 100%;
+  order: -1;
+}
+.review .award-container {
+  width: 49.5%;
 }
