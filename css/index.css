@@ -147,11 +147,15 @@ header .nav-desktop {
 .action .main-cta {
   width: 100%;
   padding-top: 2rem;
+  border-bottom: 1px dashed gray;
 }
 .action .mobile-post-it {
   padding-bottom: 1rem;
   position: relative;
   top: -2rem;
+}
+.action .small-post-it-img {
+  border-radius: 15px;
 }
 .action h2 {
   justify-content: center;
@@ -172,7 +176,6 @@ header .nav-desktop {
   display: flex;
 }
 .action .join-btn {
-  border: 2px solid red;
   color: white;
   background: red;
   width: 23%;
@@ -180,6 +183,51 @@ header .nav-desktop {
   margin-left: 4rem;
   padding: 0.5rem 0 0.5rem 0;
   font-size: 0.9em;
+}
+.action-two {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  padding-top: 1.5rem;
+  border-top: 1px dashed gray;
+  margin-right: 3rem;
+}
+.action-two h2 {
+  font-size: 1.4rem;
+  justify-content: center;
+  padding-bottom: 2rem;
+  margin-left: 3.5rem;
+  width: 80%;
+}
+.action-two p {
+  display: flex;
+  padding-top: 1rem;
+  justify-content: center;
+}
+.phone-search-div {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding-top: 1.5rem;
+}
+.phone-search-div .phone-search {
+  border-radius: 15px;
+}
+.news-articles-div {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding-top: 1.5rem;
+}
+.news-articles-div .news-articles-pic {
+  border-radius: 15px;
+}
+.simple-div {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding-top: 1.5rem;
+}
+.simple-div .simple-pic {
+  border-radius: 15px;
 }
 .review {
   display: flex;
