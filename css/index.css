@@ -242,26 +242,31 @@ header .nav-desktop a {
   padding-top: 2rem;
   display: flex;
 }
-.action .join-btn {
+.action .join-btn-div a {
+  width: 90%;
+  margin: 0 auto;
+}
+.action .join-btn-div a .join-btn {
   color: white;
   background: red;
-  width: 90%;
+  width: 100%;
   border-radius: 3rem;
   margin: 0 auto;
   padding: 1rem 0;
   font-size: 1.3em;
+  cursor: pointer;
 }
 @media (min-width: 700px) {
-  .action .join-btn {
+  .action .join-btn-div a .join-btn {
     width: 70%;
   }
 }
 @media (min-width: 700px) {
-  .action .join-btn {
+  .action .join-btn-div a .join-btn {
     width: 50%;
   }
 }
-.action .join-btn:hover {
+.action .join-btn-div a .join-btn:hover {
   background-color: #ff6a6a;
 }
 .action-two {
@@ -362,25 +367,26 @@ header .nav-desktop a {
     height: 225px;
   }
 }
-.action-two .start-btn {
+.action-two a .start-btn {
   color: white;
   background: red;
   width: 90%;
   border-radius: 3rem;
   padding: 1rem 0;
   font-size: 1.3em;
+  cursor: pointer;
 }
 @media (min-width: 700px) {
-  .action-two .start-btn {
+  .action-two a .start-btn {
     width: 70%;
   }
 }
 @media (min-width: 700px) {
-  .action-two .start-btn {
+  .action-two a .start-btn {
     width: 50%;
   }
 }
-.action-two .start-btn:hover {
+.action-two a .start-btn:hover {
   background-color: #ff6a6a;
 }
 .review {
@@ -541,6 +547,7 @@ header .nav-desktop a {
   border-radius: 3rem;
   background-color: red;
   color: white;
+  cursor: pointer;
 }
 .newsletter .newsletter-email button:hover {
   background-color: #ff6a6a;

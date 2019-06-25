@@ -34,27 +34,33 @@
     padding-bottom: 4rem;
     padding-top: 2rem;
     display: flex;
-  }
 
-  .join-btn {
-    color: white;
-    background: red;
-    width: 90%;
-    border-radius: 3rem;
-    margin: 0 auto;
-    padding: 1rem 0;
-    font-size: 1.3em;
+    a {
+      width: 90%;
+      margin: 0 auto;
 
-    @media @tablet {
-      width: 70%;
-    }
+      .join-btn {
+        color: white;
+        background: red;
+        width: 100%;
+        border-radius: 3rem;
+        margin: 0 auto;
+        padding: 1rem 0;
+        font-size: 1.3em;
+        cursor: pointer;
 
-    @media @tablet {
-      width: 50%;
-    }
+        @media @tablet {
+          width: 70%;
+        }
 
-    &:hover {
-      background-color: rgb(255, 106, 106);
+        @media @tablet {
+          width: 50%;
+        }
+
+        &:hover {
+          background-color: rgb(255, 106, 106);
+        }
+      }
     }
   }
 }
@@ -160,24 +166,28 @@
       }
     }
   }
-  .start-btn {
-    color: white;
-    background: red;
-    width: 90%;
-    border-radius: 3rem;
-    padding: 1rem 0;
-    font-size: 1.3em;
 
-    @media @tablet {
-      width: 70%;
-    }
+  a {
+    .start-btn {
+      color: white;
+      background: red;
+      width: 90%;
+      border-radius: 3rem;
+      padding: 1rem 0;
+      font-size: 1.3em;
+      cursor: pointer;
 
-    @media @tablet {
-      width: 50%;
-    }
+      @media @tablet {
+        width: 70%;
+      }
 
-    &:hover {
-      background-color: rgb(255, 106, 106);
+      @media @tablet {
+        width: 50%;
+      }
+
+      &:hover {
+        background-color: rgb(255, 106, 106);
+      }
     }
   }
 }
