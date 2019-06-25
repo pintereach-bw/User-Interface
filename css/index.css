@@ -502,6 +502,49 @@ header .nav-desktop a {
   margin-top: 0.2rem;
   color: #1150b5;
 }
+.newsletter {
+  background-color: #389583;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 5%;
+}
+.newsletter .newsletter-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.newsletter .newsletter-description .far.fa-envelope {
+  font-size: 2.5rem;
+  color: white;
+}
+.newsletter .newsletter-description p {
+  color: white;
+  font-size: 1.3rem;
+  margin: 1rem 0;
+}
+.newsletter .newsletter-email {
+  width: 100%;
+  display: flex;
+  font-size: 1.3rem;
+  justify-content: space-around;
+}
+.newsletter .newsletter-email input {
+  width: 75%;
+  font-size: 1.2rem;
+  border-radius: 3rem;
+  padding-left: 1rem;
+}
+.newsletter .newsletter-email button {
+  font-size: 1rem;
+  border: none;
+  border-radius: 3rem;
+  background-color: red;
+  color: white;
+}
+.newsletter .newsletter-email button:hover {
+  background-color: #ff6a6a;
+}
 footer {
   text-align: center;
 }
