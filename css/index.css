@@ -278,16 +278,18 @@ header .nav-desktop {
 }
 footer {
   text-align: center;
-  background-color: darkgray;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
+  background-color: #e9e5e5;
 }
 footer .footer-nav {
-  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1rem 1rem 1rem;
+  padding-top: 0.9rem;
 }
 footer a {
   text-decoration: none;
-  color: white;
+  color: #a1a765;
+}
+footer p {
+  padding-bottom: 1rem;
 }
