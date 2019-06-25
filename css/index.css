@@ -132,9 +132,15 @@ table {
 header {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 header .nav-mobile {
   display: none;
+  width: 100%;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  text-align: center;
 }
 header .nav-desktop {
   display: none;
@@ -269,4 +275,7 @@ header .nav-desktop {
 }
 .review .award-container {
   width: 49.5%;
+}
+footer {
+  text-align: center;
 }
