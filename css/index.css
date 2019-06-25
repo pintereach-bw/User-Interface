@@ -208,26 +208,47 @@ header .nav-desktop {
 .phone-search-div {
   margin-left: 3rem;
   margin-right: 3rem;
-  padding-top: 1.5rem;
+  padding-top: 2rem;
 }
 .phone-search-div .phone-search {
   border-radius: 15px;
 }
+.board-blurb {
+  margin-top: 3rem;
+}
 .news-articles-div {
   margin-left: 3rem;
   margin-right: 3rem;
-  padding-top: 1.5rem;
+  padding-top: 2rem;
 }
 .news-articles-div .news-articles-pic {
   border-radius: 15px;
+  border: 1px solid silver;
+}
+.simple-blurb {
+  margin-top: 3rem;
 }
 .simple-div {
   margin-left: 3rem;
   margin-right: 3rem;
-  padding-top: 1.5rem;
+  padding-top: 2rem;
 }
 .simple-div .simple-pic {
   border-radius: 15px;
+}
+.start-btn-div {
+  padding-bottom: 4rem;
+  padding-top: 2rem;
+  display: flex;
+}
+.start-btn {
+  color: white;
+  background: red;
+  width: 23%;
+  border-radius: 3rem;
+  margin-left: 4rem;
+  padding: 0.5rem 0 0.5rem 0;
+  font-size: 0.7em;
 }
 .review {
   display: flex;
