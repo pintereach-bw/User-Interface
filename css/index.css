@@ -126,3 +126,36 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header .nav-mobile {
+  display: none;
+}
+header .nav-desktop {
+  display: none;
+}
+.review {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.review .company-container {
+  width: 49.5%;
+  border-right: 1px solid black;
+}
+.review .company-container .company .company-rating {
+  display: flex;
+  justify-content: center;
+}
+.review .customer-feedback-container {
+  width: 100%;
+  order: -1;
+}
+.review .award-container {
+  width: 49.5%;
+}
+footer {
+  text-align: center;
+}
