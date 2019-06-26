@@ -12,11 +12,6 @@ class ExpandButton {
   }
 
   select() {
-    const links = document.querySelectorAll(".expand-button");
-    Array.from(links).map(link => {
-      link.classList.remove("active");
-    });
-    this.element.classList.add("active");
     this.tabItem.select();
   }
 }
@@ -28,10 +23,15 @@ class CardBio {
 
   select() {
     const items = document.querySelectorAll(".team-card-bio");
+    const active = this.element.classList.contains("active");
+
     Array.from(items).map(item => {
       item.classList.remove("active");
     });
-    this.element.classList.add("active");
+
+    if (!active) {
+      this.element.classList.add("active");
+    }
   }
 }
 
