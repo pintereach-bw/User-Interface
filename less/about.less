@@ -1,11 +1,92 @@
 .about {
-//border: 2px solid red;
+  .team-introduction {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    margin-top: 1.5rem;
+  }
 
-}
-
-.content-container {
-    //border: 2px solid red;
+  .team {
     display: flex;
-   flex-wrap: wrap;
-   text-align: center; 
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+
+    .team-card {
+      // border: 1px black solid;
+      width: calc(100% - 2px);
+      margin-bottom: 2rem;
+
+      .team-card-details {
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+
+        .team-card-image {
+          width: 150px;
+          height: 150px;
+
+          img {
+            width: 100%;
+            height: 100%;
+            // border-right: 1px solid black;
+          }
+        }
+
+        .team-card-title {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: space-evenly;
+          flex-wrap: wrap;
+
+          & > p {
+            font-weight: bold;
+          }
+        }
+
+        .team-card-sm {
+          display: flex;
+          flex-direction: column;
+          justify-self: flex-end;
+          justify-content: space-evenly;
+          font-size: 2rem;
+          margin-right: 1rem;
+          cursor: default;
+
+          a {
+            text-decoration: none;
+
+            .fab.fa-github {
+              color: black;
+            }
+
+            .fab.fa-linkedin-in {
+              color: @linkedin;
+            }
+
+            .fab.fa-twitter {
+              color: @twitter;
+            }
+          }
+        }
+      }
+
+      .team-card-bio {
+        display: none;
+        // border-top: 1px solid black;
+        padding: 3rem;
+
+        p {
+          z-index: -100;
+        }
+      }
+
+      .active {
+        display: block;
+      }
+    }
+  }
 }
