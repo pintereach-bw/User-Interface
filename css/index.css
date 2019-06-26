@@ -239,8 +239,6 @@ header .nav-desktop a {
   display: flex;
   justify-content: space-between;
   position: relative;
-}
-.about .team .team-card .team-card-details:nth-child(odd) {
   background-color: beige;
 }
 .about .team .team-card .team-card-details .expand-button {
