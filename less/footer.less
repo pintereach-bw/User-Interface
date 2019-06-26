@@ -9,9 +9,19 @@ footer {
 
   .footer-nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-items: left;
+    flex-wrap: wrap; //column wrap;
+    justify-content: space-between;
+    //align-items: 
     margin: 0 1rem 1rem 1rem;
     padding-top: .9rem;
+      
+    @media @tablet {
+      display: flex;
+      justify-content: space-evenly;
+      margin: 0 1rem 1rem 1rem;
+      padding-top: .9rem;
+    }
   
   
   }

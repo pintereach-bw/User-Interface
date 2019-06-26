@@ -556,9 +556,19 @@ footer {
 }
 footer .footer-nav {
   display: flex;
-  justify-content: space-evenly;
+  justify-items: left;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0 1rem 1rem 1rem;
   padding-top: 0.9rem;
+}
+@media (min-width: 700px) {
+  footer .footer-nav {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 1rem 1rem 1rem;
+    padding-top: 0.9rem;
+  }
 }
 footer a {
   text-decoration: none;
