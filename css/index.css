@@ -263,7 +263,7 @@ header .nav-desktop a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: space-evenly;
+  align-items: center;
   flex-wrap: wrap;
 }
 .about .team .team-card .team-card-details .team-card-title > p {
