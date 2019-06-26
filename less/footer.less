@@ -1,31 +1,27 @@
 footer {
   text-align: center;
   background-color: rgb(233, 229, 229);
-  // position: sticky;
-  //  left: 0;
-  //  bottom: 0;
-  //  width: 100%;
-  
 
   .footer-nav {
     display: flex;
     justify-content: space-evenly;
     margin: 0 1rem 1rem 1rem;
-    padding-top: .9rem;
-  
-  
-  }
+    padding-top: 0.9rem;
+    flex-wrap: wrap;
 
-  a {
-    text-decoration: none;
-    color: rgb(161, 167, 101);
-    
-    
-  }
+    a {
+      text-decoration: none;
+      color: rgb(161, 167, 101);
+      width: 25%;
+      margin-bottom: 1rem;
 
+      @media @tablet {
+        width: auto;
+      }
+    }
+  }
 
   p {
     padding-bottom: 1rem;
-    //border: 2px solid red;
   }
 }

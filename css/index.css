@@ -566,10 +566,18 @@ footer .footer-nav {
   justify-content: space-evenly;
   margin: 0 1rem 1rem 1rem;
   padding-top: 0.9rem;
+  flex-wrap: wrap;
 }
-footer a {
+footer .footer-nav a {
   text-decoration: none;
   color: #a1a765;
+  width: 25%;
+  margin-bottom: 1rem;
+}
+@media (min-width: 700px) {
+  footer .footer-nav a {
+    width: auto;
+  }
 }
 footer p {
   padding-bottom: 1rem;
