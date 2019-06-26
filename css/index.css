@@ -634,7 +634,8 @@ footer {
 }
 footer .footer-nav {
   display: flex;
-  justify-content: space-evenly;
+  justify-items: left;
+  justify-content: space-between;
   margin: 0 1rem 1rem 1rem;
   padding-top: 0.9rem;
   flex-wrap: wrap;
