@@ -159,6 +159,8 @@ header {
   font-size: 2rem;
   position: sticky;
   top: 0;
+  border-bottom: 1px solid grey;
+  z-index: 100;
 }
 header a {
   color: black;
@@ -183,6 +185,8 @@ header .nav-mobile {
   position: absolute;
   top: 0;
   right: 0;
+  border-bottom: 1px solid grey;
+  font-size: 1.3rem;
 }
 @media (min-width: 900px) {
   header .nav-mobile {
@@ -213,10 +217,77 @@ header .nav-desktop {
 header .nav-desktop a {
   font-size: 1.3rem;
 }
-.content-container {
-  display: flex;
-  flex-wrap: wrap;
+.about .team-introduction {
   text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  margin-top: 1.5rem;
+}
+.about .team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+.about .team .team-card {
+  width: calc(100% - 2px);
+  margin-bottom: 2rem;
+}
+.about .team .team-card .team-card-details {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.about .team .team-card .team-card-details .team-card-image {
+  width: 150px;
+  height: 150px;
+}
+.about .team .team-card .team-card-details .team-card-image img {
+  width: 100%;
+  height: 100%;
+}
+.about .team .team-card .team-card-details .team-card-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-evenly;
+  flex-wrap: wrap;
+}
+.about .team .team-card .team-card-details .team-card-title > p {
+  font-weight: bold;
+}
+.about .team .team-card .team-card-details .team-card-sm {
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-end;
+  justify-content: space-evenly;
+  font-size: 2rem;
+  margin-right: 1rem;
+  cursor: default;
+}
+.about .team .team-card .team-card-details .team-card-sm a {
+  text-decoration: none;
+}
+.about .team .team-card .team-card-details .team-card-sm a .fab.fa-github {
+  color: black;
+}
+.about .team .team-card .team-card-details .team-card-sm a .fab.fa-linkedin-in {
+  color: #0077b5;
+}
+.about .team .team-card .team-card-details .team-card-sm a .fab.fa-twitter {
+  color: #1ab2e8;
+}
+.about .team .team-card .team-card-bio {
+  display: none;
+  padding: 3rem;
+}
+.about .team .team-card .team-card-bio p {
+  z-index: -100;
+}
+.about .team .team-card .active {
+  display: block;
 }
 .action {
   display: flex;
@@ -247,26 +318,31 @@ header .nav-desktop a {
   padding-top: 2rem;
   display: flex;
 }
-.action .join-btn {
+.action .join-btn-div a {
+  width: 90%;
+  margin: 0 auto;
+}
+.action .join-btn-div a .join-btn {
   color: white;
   background: red;
-  width: 90%;
+  width: 100%;
   border-radius: 3rem;
   margin: 0 auto;
   padding: 1rem 0;
   font-size: 1.3em;
+  cursor: pointer;
 }
 @media (min-width: 700px) {
-  .action .join-btn {
+  .action .join-btn-div a .join-btn {
     width: 70%;
   }
 }
 @media (min-width: 700px) {
-  .action .join-btn {
+  .action .join-btn-div a .join-btn {
     width: 50%;
   }
 }
-.action .join-btn:hover {
+.action .join-btn-div a .join-btn:hover {
   background-color: #ff6a6a;
 }
 .action-two {
@@ -367,25 +443,26 @@ header .nav-desktop a {
     height: 225px;
   }
 }
-.action-two .start-btn {
+.action-two a .start-btn {
   color: white;
   background: red;
   width: 90%;
   border-radius: 3rem;
   padding: 1rem 0;
   font-size: 1.3em;
+  cursor: pointer;
 }
 @media (min-width: 700px) {
-  .action-two .start-btn {
+  .action-two a .start-btn {
     width: 70%;
   }
 }
 @media (min-width: 700px) {
-  .action-two .start-btn {
+  .action-two a .start-btn {
     width: 50%;
   }
 }
-.action-two .start-btn:hover {
+.action-two a .start-btn:hover {
   background-color: #ff6a6a;
 }
 .review {
@@ -546,6 +623,7 @@ header .nav-desktop a {
   border-radius: 3rem;
   background-color: red;
   color: white;
+  cursor: pointer;
 }
 .newsletter .newsletter-email button:hover {
   background-color: #ff6a6a;
@@ -557,22 +635,21 @@ footer {
 footer .footer-nav {
   display: flex;
   justify-items: left;
-  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 1rem 1rem 1rem;
   padding-top: 0.9rem;
+  flex-wrap: wrap;
 }
-@media (min-width: 700px) {
-  footer .footer-nav {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0 1rem 1rem 1rem;
-    padding-top: 0.9rem;
-  }
-}
-footer a {
+footer .footer-nav a {
   text-decoration: none;
   color: #a1a765;
+  width: 25%;
+  margin-bottom: 1rem;
+}
+@media (min-width: 700px) {
+  footer .footer-nav a {
+    width: auto;
+  }
 }
 footer p {
   padding-bottom: 1rem;
