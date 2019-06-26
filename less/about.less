@@ -22,7 +22,23 @@
       .team-card-details {
         display: flex;
         justify-content: space-between;
-        cursor: pointer;
+        position: relative;
+
+        &:nth-child(odd) {
+          background-color: beige;
+        }
+
+        .expand-button {
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          // border: 1px solid black;
+          padding: 0.5rem 0.5rem 0.5rem;
+          background-color: silver;
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+          cursor: pointer;
+        }
 
         .team-card-image {
           width: 150px;
@@ -54,7 +70,6 @@
           justify-content: space-evenly;
           font-size: 2rem;
           margin-right: 1rem;
-          cursor: default;
 
           a {
             text-decoration: none;
