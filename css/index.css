@@ -311,6 +311,12 @@ header .nav-desktop a {
 .about .team .team-card .active {
   display: block;
 }
+@media (min-width: 900px) {
+  .about footer {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+  }
+}
 .action {
   display: flex;
   flex-wrap: wrap;
@@ -367,6 +373,15 @@ header .nav-desktop a {
 }
 .action .join-btn-div a .join-btn:hover {
   background-color: #ff6a6a;
+}
+.product-description {
+  margin-bottom: 3rem;
+}
+.product-description p {
+  width: 60%;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+  text-align: center;
 }
 .action-two {
   margin-bottom: 2rem;
@@ -613,6 +628,12 @@ header .nav-desktop a {
   flex-direction: column;
   align-items: center;
   padding: 2rem 5%;
+}
+@media (min-width: 900px) {
+  .newsletter {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+  }
 }
 .newsletter .newsletter-description {
   display: flex;

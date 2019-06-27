@@ -37,3 +37,13 @@ subscribe.addEventListener("click", () => {
     alert(`Thank you for subscribing! ${email.value}`);
   }
 });
+
+subscribe.addEventListener("mouseover", function() {
+  subscribe.style.color = colorChange();
+  subscribe.style.backgroundColor = "white";
+});
+
+subscribe.addEventListener("mouseleave", function() {
+  subscribe.style.color = "white";
+  subscribe.style.backgroundColor = "red";
+});
