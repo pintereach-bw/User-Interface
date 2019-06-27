@@ -665,6 +665,7 @@ footer p {
   padding-bottom: 1rem;
 }
 .contact-div {
+  border: 1px #F87D4A;
   width: 70%;
   margin-top: 3rem;
   margin-left: 2.5rem;
@@ -672,10 +673,7 @@ footer p {
   border-radius: 4px;
   margin-bottom: 3rem;
   background-image: url(../images/mail.gif);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-x: 50%;
-  background-position-y: -5rem;
+  background-size: 199px  299px;
 }
 .contact-hdr {
   font-size: 1.9rem;
@@ -687,9 +685,11 @@ footer p {
 }
 .contact-blurb {
   margin-bottom: 3rem;
+  margin-top: -1rem;
   font-size: 1.4rem;
   text-align: center;
   color: white;
+  text-shadow: 2px 2px 2px black;
 }
 input[type=text],
 select,
@@ -698,6 +698,7 @@ textarea {
   padding: 5px;
   border-radius: 5px;
   margin-bottom: 3rem;
+  margin-top: 0.5rem;
 }
 input[type=contact-email],
 select,
@@ -709,12 +710,15 @@ textarea {
 }
 label[for=name] {
   color: white;
+  text-shadow: 2px 2px 4px black;
 }
 label[for=email_address] {
   color: white;
+  text-shadow: 2px 2px 4px black;
 }
 label[for=message] {
   color: white;
+  text-shadow: 2px 2px 4px black;
 }
 input[type=submit] {
   font-size: 1rem;
