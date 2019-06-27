@@ -703,19 +703,17 @@ footer p {
 }
 @media (min-width: 900px) {
   .contact-container {
-    background-color: #F87D4A;
+    background-color: #f87d4a;
   }
 }
 .contact-div {
-  border: 1px #F87D4A;
+  border: 1px #f87d4a;
   width: 70%;
-  margin-top: 3rem;
-  margin-left: 2.5rem;
+  margin: 3rem auto;
   padding: 2rem;
   border-radius: 4px;
-  margin-bottom: 3rem;
   background-image: url(../images/mail.gif);
-  background-size: 199px  299px;
+  background-size: 199px 299px;
 }
 @media (min-width: 900px) {
   .contact-div {
@@ -741,7 +739,7 @@ footer p {
   color: white;
   text-shadow: 2px 2px 2px black;
 }
-input[type=text],
+input[type="text"],
 select,
 textarea {
   width: 95%;
@@ -751,7 +749,7 @@ textarea {
   margin-top: 0.5rem;
   margin-left: -10px;
 }
-input[type=contact-email],
+input[type="contact-email"],
 select,
 textarea {
   width: 95%;
@@ -760,44 +758,44 @@ textarea {
   margin-bottom: 3rem;
   margin-left: -10px;
 }
-label[for=name] {
+label[for="name"] {
   color: white;
   text-shadow: 2px 2px 4px black;
   margin-left: -10px;
 }
 @media (min-width: 900px) {
-  label[for=name] {
+  label[for="name"] {
     font-size: 1.3rem;
   }
 }
-label[for=email_address] {
+label[for="email_address"] {
   color: white;
   text-shadow: 2px 2px 4px black;
   margin-left: -10px;
 }
 @media (min-width: 900px) {
-  label[for=email_address] {
+  label[for="email_address"] {
     font-size: 1.3rem;
   }
 }
-label[for=message] {
+label[for="message"] {
   color: white;
   text-shadow: 2px 2px 4px black;
   margin-left: -10px;
 }
 @media (min-width: 900px) {
-  label[for=message] {
+  label[for="message"] {
     font-size: 1.3rem;
   }
 }
-input[type=submit] {
+input[type="submit"] {
   font-size: 1rem;
   border-color: white;
   border-radius: 0.3rem;
 }
 @media (min-width: 900px) {
-  input[type=submit] {
-    color: #F87D4A;
+  input[type="submit"] {
+    color: #f87d4a;
     text-shadow: 1px 1px 1px gray;
     background-color: white;
     border-color: black;
