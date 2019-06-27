@@ -1,28 +1,42 @@
-// TODO: Refactor.
-/*
-    Need to target .team-card-details and .team-card-image,
-    otherwise container will bug out when clicking on the links
-*/
+class ExpandButton {
+  constructor(element) {
+    this.element = element;
+    this.data = this.element.dataset.tab;
+    this.itemElement = document.querySelector(
+      `.team-card-bio[data-tab="${this.data}"]`
+    );
+    this.tabItem = new CardBio(this.itemElement);
+    this.element.addEventListener("click", () => {
+      this.select();
+    });
+  }
 
-class Container {
-  constructor(props) {
-    // Get the DOM element of the .team container
-    this.props = props;
-    console.log("this.props: ", this.props);
+  select() {
+    this.tabItem.select();
   }
 }
 
-// Get the whole team container
-const teamContainer = document.querySelectorAll(".team");
-teamContainer.forEach(container => {
-  new Container(container);
-});
+class CardBio {
+  constructor(element) {
+    this.element = element;
+  }
 
-// This is bugged
-teamContainer.forEach(member => {
-  const memberBio = member.querySelector(".team-card-bio");
-  member.addEventListener("click", event => {
-    event.stopPropagation();
-    memberBio.classList.toggle("active");
+  select() {
+    const items = document.querySelectorAll(".team-card-bio");
+    const active = this.element.classList.contains("active");
+
+    Array.from(items).map(item => {
+      item.classList.remove("active");
+    });
+
+    if (!active) {
+      this.element.classList.add("active");
+    }
+  }
+}
+
+const expandButton = document
+  .querySelectorAll(".expand-button")
+  .forEach(expand => {
+    return new ExpandButton(expand);
   });
-});
