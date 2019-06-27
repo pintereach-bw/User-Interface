@@ -655,12 +655,17 @@ footer p {
   padding-bottom: 1rem;
 }
 .contact-div {
-  width: 75%;
+  width: 70%;
   margin-top: 3rem;
   margin-left: 2.5rem;
   padding: 2rem;
   border-radius: 4px;
   margin-bottom: 3rem;
+}
+@media (min-width: 900px) {
+  .contact-div {
+    width: 80%;
+  }
 }
 .contact-hdr {
   font-size: 1.9rem;
@@ -702,5 +707,7 @@ label[for=message] {
   color: white;
 }
 input[type=submit] {
-  font-size: 3rem;
+  font-size: 1rem;
+  border-color: white;
+  border-radius: 0.3rem;
 }
