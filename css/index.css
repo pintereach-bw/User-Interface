@@ -694,6 +694,7 @@ footer p {
   padding-bottom: 2rem;
   padding-top: 0.5rem;
   color: white;
+  text-shadow: 0.04em 0 black;
 }
 .contact-blurb {
   margin-bottom: 3rem;
@@ -727,15 +728,30 @@ label[for=name] {
   text-shadow: 2px 2px 4px black;
   margin-left: -10px;
 }
+@media (min-width: 900px) {
+  label[for=name] {
+    font-size: 1.3rem;
+  }
+}
 label[for=email_address] {
   color: white;
   text-shadow: 2px 2px 4px black;
   margin-left: -10px;
 }
+@media (min-width: 900px) {
+  label[for=email_address] {
+    font-size: 1.3rem;
+  }
+}
 label[for=message] {
   color: white;
   text-shadow: 2px 2px 4px black;
   margin-left: -10px;
+}
+@media (min-width: 900px) {
+  label[for=message] {
+    font-size: 1.3rem;
+  }
 }
 input[type=submit] {
   font-size: 1rem;
