@@ -34,7 +34,7 @@ subscribe.addEventListener("click", () => {
   if (email.value === "") {
     alert("Please enter an e-mail.");
   } else {
-    alert(`Thank you for subscribing! ${email.value}`);
+    alert(`Thank you for subscribing, ${email.value}!`);
   }
 });
 
