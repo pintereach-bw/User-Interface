@@ -34,6 +34,16 @@ subscribe.addEventListener("click", () => {
   if (email.value === "") {
     alert("Please enter an e-mail.");
   } else {
-    alert(`Thank you for subscribing! ${email.value}`);
+    alert(`Thank you for subscribing, ${email.value}!`);
   }
+});
+
+subscribe.addEventListener("mouseover", function() {
+  subscribe.style.color = colorChange();
+  subscribe.style.backgroundColor = "white";
+});
+
+subscribe.addEventListener("mouseleave", function() {
+  subscribe.style.color = "white";
+  subscribe.style.backgroundColor = "red";
 });
