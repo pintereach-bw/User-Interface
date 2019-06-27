@@ -1,9 +1,16 @@
-// .contact-container {
-//     background-color: #F87D4A;
-// }
+ .contact-container {
+     
+       //border: 1px #F87D4A;
+
+       @media @desktop {
+            //width: 80%;
+            background-color: #F87D4A;
+            
+          }
+ }
 
 .contact-div {
-    //border: 2px solid red;
+    border: 1px #F87D4A;
     //display: flex;
     //flex-direction: column;
     width: 70%;
@@ -13,14 +20,20 @@
     border-radius: 4px;
     margin-bottom: 3rem;
     background-image: url(../images/mail.gif);
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position-x: 50%;
-    background-position-y: -5rem;
+    //background-repeat: no-repeat;
+    background-size: 199px  299px;
+    //background-size: cover; 
+     //background-position-x: 50%;
      
-    // @media @desktop {
-    //     width: 80%;
-    //   }
+     
+     @media @desktop {
+        //width: 80%;
+        background-image: url(../images/mail2.gif);
+        background-position-y: -15rem;
+        background-size: cover;
+        //padding-bottom: 8rem; 
+
+       }
 }
 
 // style .background-image  {
@@ -39,22 +52,18 @@
  padding-bottom: 2rem;
  padding-top: .5rem;
  color: white;
- //background-color: rgba(194, 176, 176, 0.938);
- 
- //margin-left: 1rem;
- //background-color: rgba(127, 170, 187, 0.637);
- 
- 
  //border: 2px solid red;
- //margin-left: 1.5rem;
- //margin-top: 5rem;
+ text-shadow: 0.04em 0 black,
+        
 }
 
 .contact-blurb {
  margin-bottom: 3rem;
+ margin-top: -1rem;
  font-size: 1.4rem;
  text-align: center;
  color: white;
+ text-shadow: 2px 2px 2px black;
 
 }
 
@@ -63,6 +72,8 @@ input[type=text] , select, textarea {
     padding: 5px;
     border-radius: 5px;
     margin-bottom: 3rem;
+    margin-top: .5rem;
+    margin-left: -10px;
 
 
 }
@@ -72,6 +83,7 @@ input[type=contact-email] , select, textarea {
     padding: 5px;
     border-radius: 5px;
     margin-bottom: 3rem;
+    margin-left: -10px;
 
 
 }
@@ -79,12 +91,26 @@ input[type=contact-email] , select, textarea {
 label[for=name] {
     //border: 2px solid red;
     color: white;
+    text-shadow: 2px 2px 4px black;
+    margin-left: -10px;
+
+    @media @desktop {
+     font-size: 1.3rem;
+        
+      }
     
 }
 
 label[for=email_address] {
     //border: 2px solid red;
     color: white;
+    text-shadow: 2px 2px 4px black;
+    margin-left: -10px;
+
+    @media @desktop {
+        font-size: 1.3rem;
+           
+         }
     
 }
 
@@ -92,6 +118,13 @@ label[for=email_address] {
 label[for=message] {
     //border: 2px solid red;
     color: white;
+    text-shadow: 2px 2px 4px black;
+    margin-left: -10px;
+
+    @media @desktop {
+        font-size: 1.3rem;
+           
+         }
     
 }
 
@@ -99,6 +132,20 @@ input[type=submit] {
     font-size: 1rem;
     border-color: white;
     border-radius: .3rem;
+
+    @media @desktop {
+        //width: 80%;
+        color: #F87D4A;
+        text-shadow: 1px 1px 1px gray;
+       background-color: white;
+       border-color: black;
+       font-size: 1.2rem;
+       padding: .3rem;
+       padding-right: 1rem;
+       padding-left: 1rem;
+    
+      }
+    
 }
 
 #message {
