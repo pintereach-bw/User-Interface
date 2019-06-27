@@ -701,7 +701,13 @@ footer .footer-nav a {
 footer p {
   padding-bottom: 1rem;
 }
+@media (min-width: 900px) {
+  .contact-container {
+    background-color: #F87D4A;
+  }
+}
 .contact-div {
+  border: 1px #F87D4A;
   width: 70%;
   margin-top: 3rem;
   margin-left: 2.5rem;
@@ -709,10 +715,14 @@ footer p {
   border-radius: 4px;
   margin-bottom: 3rem;
   background-image: url(../images/mail.gif);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-x: 50%;
-  background-position-y: -5rem;
+  background-size: 199px  299px;
+}
+@media (min-width: 900px) {
+  .contact-div {
+    background-image: url(../images/mail2.gif);
+    background-position-y: -15rem;
+    background-size: cover;
+  }
 }
 .contact-hdr {
   font-size: 1.9rem;
@@ -721,12 +731,15 @@ footer p {
   padding-bottom: 2rem;
   padding-top: 0.5rem;
   color: white;
+  text-shadow: 0.04em 0 black;
 }
 .contact-blurb {
   margin-bottom: 3rem;
+  margin-top: -1rem;
   font-size: 1.4rem;
   text-align: center;
   color: white;
+  text-shadow: 2px 2px 2px black;
 }
 input[type=text],
 select,
@@ -735,6 +748,8 @@ textarea {
   padding: 5px;
   border-radius: 5px;
   margin-bottom: 3rem;
+  margin-top: 0.5rem;
+  margin-left: -10px;
 }
 input[type=contact-email],
 select,
@@ -743,20 +758,54 @@ textarea {
   padding: 5px;
   border-radius: 5px;
   margin-bottom: 3rem;
+  margin-left: -10px;
 }
 label[for=name] {
   color: white;
+  text-shadow: 2px 2px 4px black;
+  margin-left: -10px;
+}
+@media (min-width: 900px) {
+  label[for=name] {
+    font-size: 1.3rem;
+  }
 }
 label[for=email_address] {
   color: white;
+  text-shadow: 2px 2px 4px black;
+  margin-left: -10px;
+}
+@media (min-width: 900px) {
+  label[for=email_address] {
+    font-size: 1.3rem;
+  }
 }
 label[for=message] {
   color: white;
+  text-shadow: 2px 2px 4px black;
+  margin-left: -10px;
+}
+@media (min-width: 900px) {
+  label[for=message] {
+    font-size: 1.3rem;
+  }
 }
 input[type=submit] {
   font-size: 1rem;
   border-color: white;
   border-radius: 0.3rem;
+}
+@media (min-width: 900px) {
+  input[type=submit] {
+    color: #F87D4A;
+    text-shadow: 1px 1px 1px gray;
+    background-color: white;
+    border-color: black;
+    font-size: 1.2rem;
+    padding: 0.3rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
 }
 #message {
   height: 200px;
