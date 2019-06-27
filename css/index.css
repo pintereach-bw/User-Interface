@@ -654,3 +654,50 @@ footer .footer-nav a {
 footer p {
   padding-bottom: 1rem;
 }
+.contact-div {
+  width: 75%;
+  margin-top: 3rem;
+  margin-left: 2.5rem;
+  padding: 2rem;
+  border-radius: 4px;
+  margin-bottom: 3rem;
+}
+.contact-hdr {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  width: 100%;
+  padding-bottom: 2rem;
+  padding-top: 0.5rem;
+  color: white;
+}
+.contact-blurb {
+  margin-bottom: 3rem;
+  font-size: 1.4rem;
+  text-align: center;
+  color: white;
+}
+input[type=text],
+select,
+textarea {
+  width: 95%;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 3rem;
+}
+input[type=contact-email],
+select,
+textarea {
+  width: 95%;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 3rem;
+}
+label[for=name] {
+  color: white;
+}
+label[for=email_address] {
+  color: white;
+}
+label[for=message] {
+  color: white;
+}

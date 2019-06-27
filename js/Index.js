@@ -1,3 +1,10 @@
+// Pop up
+// buttonevent.onclick = () => {
+//   window.open('https://pintreach-bw.netlify.com',name, width=200,height=100);
+// };
+
+
+
 //Event listener to prevent user from leaving the home page
 
 // window.addEventListener('beforeunload', (event)=> {
@@ -6,38 +13,16 @@
 // });
 
 
-//Event listener that changes the color of nav buttons
-/*let navevent = document.querySelectorAll('.hover');
-console.log(navevent);
-navevent.forEach(function(link,i){
- link.addEventListener('mouseover', function(){
- navevent[i].style.color = 'purple';
- });
 
- link.addEventListener('mouseleave', function(){
-     navevent[i].style.color = 'black';
- });
-}); */
 
 function colorChange() {
-    let x = Math.floor(Math.random() * 200);
-    let y = Math.floor(Math.random() * 200);
-    let z = Math.floor(Math.random() * 200);
+    let x = Math.floor(Math.random() * 248);
+    let y = Math.floor(Math.random() * 248);
+    let z = Math.floor(Math.random() * 248);
     let linkColor = 'rgb(' + x + ',' + y + ',' + z + ')';
     return linkColor;
 }
 
-let navevent = document.querySelectorAll('.hover');
-console.log(navevent);
-navevent.forEach(function(link,i){
- link.addEventListener('mouseover', function(){
- navevent[i].style.color = colorChange();
- });
-
- link.addEventListener('mouseleave', function(){
-     navevent[i].style.color = 'black';
- });
-});
 
 let buttonevent = document.querySelector('.join-btn');
 console.log(buttonevent);
