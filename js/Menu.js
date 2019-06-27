@@ -19,3 +19,23 @@ window.addEventListener("resize", event => {
     navMobile.style.display = "none";
   }
 });
+
+function colorChange() {
+  let x = Math.floor(Math.random() * 200);
+  let y = Math.floor(Math.random() * 200);
+  let z = Math.floor(Math.random() * 200);
+  let linkColor = "rgb(" + x + "," + y + "," + z + ")";
+  return linkColor;
+}
+
+let navevent = document.querySelectorAll("header a");
+
+navevent.forEach(function(link, i) {
+  link.addEventListener("mouseover", function() {
+    navevent[i].style.color = colorChange();
+  });
+
+  link.addEventListener("mouseleave", function() {
+    navevent[i].style.color = "black";
+  });
+});
