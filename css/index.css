@@ -239,25 +239,37 @@ header .nav-desktop a {
   display: flex;
   justify-content: space-between;
   position: relative;
-  background-color: beige;
+  background-color: #bac2d6;
+  border-radius: 15px;
 }
 .about .team .team-card .team-card-details .expand-button {
   position: absolute;
   bottom: 0;
   left: 50%;
   padding: 0.5rem 0.5rem 0.5rem;
-  background-color: silver;
+  background-color: #dcd6d1;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  font-weight: bold;
+  color: #4d6e9b;
   cursor: pointer;
+}
+.about .team .team-card .team-card-details .expand-button:hover {
+  background-color: #f2f0ee;
+  color: #2b3e57;
 }
 .about .team .team-card .team-card-details .team-card-image {
   width: 150px;
   height: 150px;
+  background-color: #8d8d8d;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 .about .team .team-card .team-card-details .team-card-image img {
   width: 100%;
   height: 100%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 .about .team .team-card .team-card-details .team-card-title {
   display: flex;
@@ -303,6 +315,7 @@ header .nav-desktop a {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
+  margin-top: 1.5rem;
 }
 .action .main-cta {
   width: 100%;
@@ -595,7 +608,7 @@ header .nav-desktop a {
   color: #1150b5;
 }
 .newsletter {
-  background-color: #389583;
+  background-color: #8de4e4;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -609,11 +622,14 @@ header .nav-desktop a {
 .newsletter .newsletter-description .far.fa-envelope {
   font-size: 2.5rem;
   color: white;
+  text-shadow: 2px 2px #4d4d4d;
 }
 .newsletter .newsletter-description p {
   color: white;
+  font-weight: 900;
   font-size: 1.3rem;
   margin: 1rem 0;
+  text-shadow: 2px 2px #4d4d4d;
 }
 .newsletter .newsletter-email {
   width: 100%;
