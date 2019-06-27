@@ -30,7 +30,7 @@ function colorChange() {
 }
 
 let navevent = document.querySelectorAll("header a");
-console.log(navevent);
+
 navevent.forEach(function(link, i) {
   link.addEventListener("mouseover", function() {
     navevent[i].style.color = colorChange();
