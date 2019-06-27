@@ -663,7 +663,7 @@ footer p {
   margin-bottom: 3rem;
 }
 .contact-hdr {
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   font-weight: bolder;
   width: 100%;
   padding-bottom: 2rem;
@@ -700,4 +700,7 @@ label[for=email_address] {
 }
 label[for=message] {
   color: white;
+}
+input[type=submit] {
+  font-size: 3rem;
 }
