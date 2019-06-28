@@ -709,11 +709,9 @@ footer p {
 .contact-div {
   border: 1px #F87D4A;
   width: 70%;
-  margin-top: 3rem;
-  margin-left: 2.5rem;
+  margin: 3rem auto;
   padding: 2rem;
   border-radius: 4px;
-  margin-bottom: 3rem;
   background-image: url(../images/mail.gif);
   background-size: 199px  299px;
 }
@@ -809,4 +807,9 @@ input[type=submit] {
 }
 #message {
   height: 200px;
+}
+.user-convo {
+  width: 100%;
+  border: 2px solid red;
+  margin-left: 10px;
 }
